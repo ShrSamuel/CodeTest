@@ -6,8 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CodeTest" />
+        <module name="com.shr.services.impl" />
+        <module name="com.shr.utils" />
+        <module name="com.shr.services" />
+        <module name="com.shr.model" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.shr.models" target="1.5" />
+      <module name="com.shr.Services" target="1.5" />
+      <module name="Models" target="1.5" />
+      <module name="Services" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
