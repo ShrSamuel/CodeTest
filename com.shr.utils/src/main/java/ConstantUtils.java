@@ -11,6 +11,11 @@ public final class ConstantUtils {
      * The constant HOST_TO_READ.
      */
     public static final String HOST_TO_READ = "HostToRead";
+
+    /**
+     * The constant HOST_FROM_READ.
+     */
+    public static final String HOST_FROM_READ = "HostFromRead";
     /**
      * The constant FILE_TO_READ.
      */

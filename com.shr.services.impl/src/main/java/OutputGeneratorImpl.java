@@ -13,7 +13,7 @@ import java.util.LinkedHashSet;
  */
 public class OutputGeneratorImpl implements OutputGenerator {
 
-    private static FileDataVoMapper fileDataVoMapper;
+
     private static OutputGeneratorImpl outputGenerator;
 
     /**
@@ -21,7 +21,7 @@ public class OutputGeneratorImpl implements OutputGenerator {
      */
     private OutputGeneratorImpl() {
 
-        fileDataVoMapper.getInstance();
+
     }
 
     public static OutputGeneratorImpl getInstance() {
@@ -42,14 +42,15 @@ public class OutputGeneratorImpl implements OutputGenerator {
         HashSet<String> conectedFromHost = new LinkedHashSet<>();
         HashMap<String, ConexionCounter> hostConexions = new HashMap<>();
         String hostToview = CodeTestConfiguration.getInstance().getConfig(ConstantUtils.HOST_TO_READ);
+        String hostFromview = CodeTestConfiguration.getInstance().getConfig(ConstantUtils.HOST_FROM_READ);
         for (String line : linesRead) {
             try {
-                FileDataVo data = fileDataVoMapper.StringToVO(line);
+                FileDataVo data = FileDataVoMapper.getInstance().StringToVO(line);
 
                 if (data.getHost1().equalsIgnoreCase(hostToview)) {
                     conectedToHost.add(data.getHost2());
                 }
-                if (data.getHost2().equalsIgnoreCase(hostToview)) {
+                if (data.getHost2().equalsIgnoreCase(hostFromview)) {
                     conectedFromHost.add(data.getHost1());
                 }
                 this.addHostConexion(hostConexions, data.getHost1());
@@ -74,9 +75,10 @@ public class OutputGeneratorImpl implements OutputGenerator {
     private void showOutputs(HashSet<String> conectedToHost, HashSet<String> conectedFromHost, HashMap<String, ConexionCounter> hostConexions) {
         String mostConectedHost = this.getMostConectedHost(hostConexions);
         String hostReaded = CodeTestConfiguration.getInstance().getConfig(ConstantUtils.HOST_TO_READ);
+        String hostFromview = CodeTestConfiguration.getInstance().getConfig(ConstantUtils.HOST_FROM_READ);
         System.out.println("Conexions made To " + hostReaded + " in the last hour: ");
         System.out.println(conectedToHost.toString());
-        System.out.println("Conexions made From " + hostReaded + " in the last hour: ");
+        System.out.println("Conexions made From " + hostFromview + " in the last hour: ");
         System.out.println(conectedFromHost.toString());
         System.out.println("Most conected host in the las hour " + mostConectedHost);
 
@@ -88,7 +90,5 @@ public class OutputGeneratorImpl implements OutputGenerator {
         return host;
     }
 
-    public void setFileDataVoMapper(FileDataVoMapper fileDataVoMapper) {
-        this.fileDataVoMapper = fileDataVoMapper;
-    }
+
 }

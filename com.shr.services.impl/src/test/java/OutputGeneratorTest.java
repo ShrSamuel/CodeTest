@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -13,8 +14,11 @@ public class OutputGeneratorTest {
     public void setUp() {
 
         outputGenerator = OutputGeneratorImpl.getInstance();
+        FileDataVoMapper fileDataVoMapper = FileDataVoMapper.getInstance();
         badFormatedCollection = this.generateBadCollection();
         formatedCollection = this.generateCollection();
+
+
     }
 
     @Test
