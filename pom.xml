@@ -11,12 +11,12 @@
 
 
     <modules>
-
-        <module>com.shr.services</module>
-
         <module>com.shr.model</module>
+        <module>com.shr.services</module>
         <module>com.shr.services.impl</module>
         <module>com.shr.utils</module>
+        <module>com.shr.app</module>
     </modules>
+
 
 </project>

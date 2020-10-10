@@ -9,5 +9,5 @@ public interface HostFileReader {
 
     Collection<FileDataVo> readFile(Long date1, Long date2,String hostName) throws IOException;
 
-    Collection<FileDataVo> readFileEndlessly(Date date1, Date date2);
+    void readWholeFile() throws IOException;
 }

@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/com.shr.models/pom.xml" />
+        <option value="$PROJECT_DIR$/com.shr.schedulers/pom.xml" />
       </set>
     </option>
   </component>

@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,12 +44,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/com.shr.app/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\CodeTestWork\CodeTest" />
       <recent name="E:\CodeTestWork\CodeTest\Services\com.shr.services.impl\src" />
@@ -63,10 +67,51 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+  <component name="RunManager" selected="JUnit.EndlessHostFileReaderTest.testEndlessRead">
+    <configuration name="EndlessHostFileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.shr.services.impl" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EndlessHostFileReaderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EndlessHostFileReaderTest.testEndlessRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.shr.services.impl" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EndlessHostFileReaderTest" />
+      <option name="METHOD_NAME" value="testEndlessRead" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HostFileReadImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.shr.services.impl" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HostFileReadImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HostFileReadImplTest.TestReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.shr.services.impl" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HostFileReadImplTest" />
+      <option name="METHOD_NAME" value="TestReadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HostFileReadImplTest.TestWholeReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.shr.services.impl" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HostFileReadImplTest" />
+      <option name="METHOD_NAME" value="TestWholeReadFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,9 +163,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UberJar" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Remote.UberJar" />
+      <item itemvalue="JUnit.HostFileReadImplTest.TestReadFile" />
+      <item itemvalue="JUnit.HostFileReadImplTest" />
+      <item itemvalue="JUnit.HostFileReadImplTest.TestWholeReadFile" />
+      <item itemvalue="JUnit.EndlessHostFileReaderTest" />
+      <item itemvalue="JUnit.EndlessHostFileReaderTest.testEndlessRead" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.EndlessHostFileReaderTest.testEndlessRead" />
+        <item itemvalue="JUnit.EndlessHostFileReaderTest" />
+        <item itemvalue="JUnit.HostFileReadImplTest" />
+        <item itemvalue="JUnit.HostFileReadImplTest.TestReadFile" />
+        <item itemvalue="JUnit.HostFileReadImplTest.TestWholeReadFile" />
       </list>
     </recent_temporary>
   </component>
@@ -136,92 +206,186 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1602105164200">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1602346498477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602105164200" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1602109268952">
+    <state x="440" y="94" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602346498477" />
+    <state x="2360" y="94" key="#Project_Structure/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602191317859" />
+    <state x="156" y="224" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602331716279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602109268952" />
-    <state x="1072" y="211" key="#xdebugger.evaluate" timestamp="1602110498992">
+    <state x="156" y="224" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602331716279" />
+    <state x="2076" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602184564041" />
+    <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602349218142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1072" y="211" key="#xdebugger.evaluate/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602110498992" />
-    <state width="436" height="466" key="DebuggerActiveHint" timestamp="1602111080262">
+    <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602349218142" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1602354954036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="436" height="466" key="DebuggerActiveHint/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111080262" />
-    <state width="393" height="466" key="DebuggerActiveHint/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602111028006" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602354954036" />
+    <state x="2685" y="204" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602194911217" />
+    <state x="2610" y="296" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1602191335898">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="296" key="#com.intellij.ide.util.PackageChooserDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602191335898" />
+    <state x="2640" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602191341631">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602177926617" />
+    <state x="2640" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602191341631" />
+    <state x="2593" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602359440266">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2593" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602359440266" />
+    <state x="1072" y="211" width="743" height="594" key="#xdebugger.evaluate" timestamp="1602353841519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1072" y="211" width="743" height="594" key="#xdebugger.evaluate/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602353841519" />
+    <state x="2992" y="211" key="#xdebugger.evaluate/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602194133067" />
+    <state width="475" height="466" key="DebuggerActiveHint" timestamp="1602346823127">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="475" height="466" key="DebuggerActiveHint/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602346823127" />
+    <state width="457" height="466" key="DebuggerActiveHint/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602184697935" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602099932022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602099932022" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1602111379539">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602360174582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110953853" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1602111379539">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602360174582" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343498658" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602360174582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110953853" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1602111379538">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602360174582" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343498658" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602360174582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379538" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110953852" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1602111379539">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602360174582" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343498658" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602360174582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110953853" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1602111379539">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602360174582" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343498658" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1602359895252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110954023" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1602111379539">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602359895252" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343453860" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1602359895252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110954022" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1602111379539">
+    <state width="1877" height="347" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602359895252" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343453860" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1602359895252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110954022" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1602111379539">
+    <state width="1877" height="347" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602359895252" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343453859" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1602359895252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602111379539" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602110954022" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602359895252" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602343453860" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602100607762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602100607762" />
-    <state x="2381" y="165" key="SettingsEditor" timestamp="1602103135766">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602100897293" />
-    <state x="2381" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602103135766" />
-    <state x="342" y="181" key="new project wizard" timestamp="1602105156565">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602348958187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="181" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602105156565" />
+    <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602348958187" />
+    <state x="2381" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602103135766" />
+    <state x="2696" y="298" key="chooseDestDirectoryDialog" timestamp="1602181402880">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2696" y="298" key="chooseDestDirectoryDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602181402880" />
+    <state x="2428" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602197115775">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2428" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602197115775" />
+    <state x="2132" y="-18" width="1420" height="717" maximized="true" key="dock-window-1" timestamp="1602360250724">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2132" y="-18" width="1420" height="717" maximized="true" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602360250724" />
+    <state x="2587" y="119" width="585" height="801" key="find.popup" timestamp="1602355286962">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2587" y="119" width="585" height="801" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602355286962" />
+    <state x="2262" y="181" key="new project wizard" timestamp="1602191306337">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="181" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602177814733" />
+    <state x="2262" y="181" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602191306337" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1602100398496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602100398496" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1602328011947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602328011947" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/HostFileReaderImpl.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/OutputGeneratorImpl.java</url>
+          <line>85</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/OutputGeneratorImpl.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/OutputGeneratorImpl.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/OutputGeneratorImpl.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/EndlessHostFileReaderImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.model/src/main/java/FileDataVoMapper.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.model/src/main/java/FileDataVoMapper.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.app/src/main/java/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/test/java/OutputGeneratorTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com.shr.services.impl/src/main/java/EndlessHostFileReaderImpl.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -34,6 +34,7 @@ public class FileDataVo {
                 "timeStamp=" + timeStamp +
                 ", host1='" + host1 + '\'' +
                 ", host2='" + host2 + '\'' +
-                '}';
+                "}'\n'";
+
     }
 }

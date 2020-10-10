@@ -1,57 +1,74 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Date;
 import java.util.LinkedList;
 
 public class HostFileReaderImpl implements HostFileReader {
 
+    private CodeTestConfiguration config = CodeTestConfiguration.getInstance();
 
-    public Collection<FileDataVo> readFile(Long date1, Long date2, String hostName) throws IOException {
-        this.test(date1, date2);
-        return null;
+    private static HostFileReaderImpl hostFileReader;
+
+    private HostFileReaderImpl() {
     }
 
-    public Collection<FileDataVo> readFileEndlessly(Date date1, Date date2) {
-        return null;
+    public static HostFileReaderImpl getInstance() {
+        if (hostFileReader == null) {
+            hostFileReader = new HostFileReaderImpl();
+        }
+        return hostFileReader;
     }
 
-    private void test(Long dataTime1, Long time2) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Samu\\Desktop\\DOCUMENTACION COCHE NUEVO\\input-file-10000.txt"));
+    @Override
+    public Collection<FileDataVo> readFile(Long timeStamp1, Long timeStamp2, String hostName) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(config.getConfig(ConstantUtils.FILE_TO_READ)));
         Collection<String[]> data = new LinkedList<String[]>();
         Boolean breakloop = false;
-        Long diference = (time2 + 5 * 60 * 1000);
-        String x;
-        while ( (x = br.readLine() )!= null && !breakloop) {
-           //it will omit first line Array x
-            //it return second line as a string
-            String[] x_value = x.split(" "); //You can parse string array into int.
-            Long tsp = Long.parseLong(x_value[0]);
+        Long diference = (timeStamp2 + 5 * 60 * 1000);
+        String line;
+        while ((line = br.readLine()) != null && !breakloop) {
+            String[] lineValues = line.split(" ");
+            Long tsp = Long.parseLong(lineValues[0]);
 
-            if (this.validateLine(x_value, dataTime1, time2)) {
-                data.add(x_value);
+            if (this.validateLine(lineValues, timeStamp1, timeStamp2, hostName)) {
+                data.add(lineValues);
             }
-
-            if (tsp >= time2 && tsp > diference) {
+            if (tsp >= timeStamp2 && tsp > diference) {
                 breakloop = true;
             }
         }
+        FileDataVoMapper mapper = FileDataVoMapper.getInstance();
+        return mapper.toVo(data);
 
-        Collection<FileDataVo> fileDataVos = FileDataVoParser.getInstance().toVo(data);
-        System.out.println(fileDataVos.toString());
     }
 
-    private boolean validateLine(String[] values, Long d1, Long d2) {
+    @Override
+    public void readWholeFile() throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(config.getConfig(ConstantUtils.FILE_TO_READ)));
+        Collection<String> data = new LinkedList<String>();
+        String line;
+        while ((line = br.readLine()) != null) {
+            data.add(line);
+        }
+        OutputGeneratorImpl outputGenerator = OutputGeneratorImpl.getInstance();
+        outputGenerator.generateOutput(data);
+    }
+
+
+    private boolean validateLine(String[] values, Long d1, Long d2, String host1) {
         boolean response = false;
 
         Long tsp = Long.parseLong(values[0]);
-        if ((d1 <= tsp) && (tsp <= d2)) {
+        if ((d1 <= tsp) && (tsp <= d2) && host1.equals(values[1])) {
             response = true;
         }
         return response;
+    }
 
+    public void setConfig(CodeTestConfiguration config) {
+        this.config = config;
     }
 
 
